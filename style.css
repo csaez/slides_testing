@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+body {
+    font: 1em/1.5 'Open Sans';
+    color: #3f3f3f;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway';
+    font-weight: normal;
+}
+
+img {border: 1px dashed #ccc;}
+
+blockquote {
+    background-color: #E6E6E6;
+    border-left: 5px solid #DE3728;
+    padding: 0.2em 1em;
+    margin: 0px 0px 1em;
+}
+
+a, a > code {
+    color: #DE3728;
+    text-decoration: none;
+}
+
+.footnote {
+    position: absolute;
+    bottom: 3em;
+}
+
+.red {
+    color: #DE3728;
+    font-weight: 600;
+}
+
+.big{
+    font-size: 1.75em;
+    font-family: Raleway;
+}
+
+.inverse {
+    background: #2d2d2d !important;
+    color: #777872;
+    text-shadow: 0 0 20px #333;
+}
+
+.inverse h1, .inverse h2 {
+    color: #f2f2f2;
+    line-height: 0.8em;
+}
+
+.clear {background: #f2f2f2 !important;}
+
+.remark-slide-content {
+    background: #f2f2f2; /* Old browsers */
+    background: -moz-linear-gradient(top, #2d2d2d 22%, #f2f2f2 22%, #f2f2f2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #2d2d2d 22%,#ffffff 22%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #2d2d2d 22%,#f2f2f2 22%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d2d2d', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+}
+
+.remark-slide-content h1 {
+    color: #f2f2f2;
+    background: #2d2d2d;
+}
+
+.remark-code, .remark-inline-code { font-family: 'Inconsolata'; }
+
+.remark-fading {
+    z-index: 9;
+    transition: opacity 0.2s linear;
+    opacity: 0;
+}
+
+.remark-visible {
+    transition: opacity 0.2s linear;
+    opacity: 1;
+}
+
+.remark-slide-number { font: 0.75em 'Raleway'; }
