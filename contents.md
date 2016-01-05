@@ -1,5 +1,5 @@
 class: center, middle, inverse
-# Testing as a Medium
+# Testing as a medium
 
 ---
 # Who am I?
@@ -10,18 +10,19 @@ class: center, middle, inverse
 - All things Python.
 - Music lover.
 - Developer wannabe.
-- [@csaezmargotta](https://twitter.com/csaezmargotta) (twitter)
 - http://cesarsaez.me
+- [@csaezmargotta](https://twitter.com/csaezmargotta) (twitter)
 
 ---
 # Agenda
 
-1. What is this talk about?
-2. Testing and Technical Artists
-3. Beyond the quality gate
-4. Test-last vs Test-driven
-5. Dealing with dependencies
-6. Testing existing/legacy projects
+1. Introduction
+2. Testing as Technical Artists
+3. Automated testing
+4. Beyond the quality gate
+5. Test-driven development
+6. Testing legacy projects (coverage)
+7. It's not only about us!
 
 ---
 class: center, middle, inverse
@@ -64,10 +65,6 @@ class: center, middle, inverse
 
 --
 
-- Why are we (not) embracing testing.
-
---
-
 - What can we do to improve the current situation.
 
 ---
@@ -79,7 +76,8 @@ class: center, middle, inverse
 performance/load testing, anything!)
 
 ---
-# Traditional approach
+
+# Testing
 
 According to Wikipedia:
 
@@ -103,20 +101,41 @@ class: center, middle, clear
 ![cientific method](./images/scientific_method.png)
 
 ---
-# Traditional approach
+class: center, middle, clear
 
-What are the benefits *from a developer POV*?
+# Do we test?
+
+---
+class: center, middle, inverse
+
+# Automated testing
+
+---
+
+# Automated testing
+
+.big[What are the benefits *from a developer POV*?]
+
+--
 
 - Enable refactoring
+
+--
+
 - Avoid regressions bugs .red[*]
-- ?
 
 .footnote[ .red[*] Or at least reduce the likelihood of a regression.]
 
 --
+
 > ... althought it seems to add some overhead to the development proccess
 > by adding an extra "phase" after the problem has been solved (similar to
 > documentation).
+
+---
+class: center, middle, clear
+
+![Who needs testing?](images/no_testing.jpg)
 
 ---
 class: center, middle, inverse
@@ -149,5 +168,47 @@ class: center, middle, clear
 ---
 class: center, middle, inverse
 
-# Test-last vs Test-driven
+# Test-driven development
 
+---
+class: center, middle, clear
+
+![TDD cycle](./images/tdd_cycle.png)
+
+---
+
+# Test-driven development
+
+Benefits *from a developer point of view*:
+
+- All the previous benefits plus...
+
+--
+
+- Planning your code (leads to better design).
+
+--
+
+- Up to date sample code (in form of tests).
+
+--
+
+- Demostrate concrete progress.
+
+--
+
+- Inform where to go next.
+
+--
+
+- It's fun! .red[*]
+
+---
+class: center, middle, inverse
+
+# Testing legacy projects
+
+---
+class: center, middle, inverse
+
+# Ultimately, it's not abut us!
