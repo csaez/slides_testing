@@ -191,7 +191,9 @@ Benefits *from a developer point of view*:
 
 --
 
-- Leads to better design.
+- Leads to better design. .red[*]
+
+.footnote[.red[*] More on this in the next slide.]
 
 --
 
@@ -207,7 +209,7 @@ Benefits *from a developer point of view*:
 
 --
 
-- It's fun! .red[*]
+- It's fun!
 
 ---
 
