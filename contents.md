@@ -106,6 +106,12 @@ class: center, middle, clear
 # Do we test?
 
 ---
+class: center, middle, clear
+
+## Of course we do!.red[*]
+
+_ .footnote[.red[*] "It works in my computer".]_
+---
 class: center, middle, inverse
 
 # Automated testing
@@ -185,7 +191,11 @@ Benefits *from a developer point of view*:
 
 --
 
-- Planning your code (leads to better design).
+- Leads to better design.
+
+--
+
+- Inform us where to go next.
 
 --
 
@@ -197,13 +207,52 @@ Benefits *from a developer point of view*:
 
 --
 
-- Inform where to go next.
-
---
-
 - It's fun! .red[*]
 
 ---
+
+# Study Case: *AL's website*
+
+.big[Greeting onLoad (javascript):]
+
+```javascript
+function displayTimeofDayGreeting() {
+    var e = new Date,
+        t = e.getHours(),
+        n = e.getMinutes(),
+        r = "";
+    (t > 5 || t == 5 && n >= 30) && t < 12 ? r = "morning" : t < 17 ? r = "afternoon" : t < 22 ? r = "evening" : r = "night";
+    this.$el.find(".doodle").each(function() {
+      var e = $(this);
+      e.attr("data-timeofday") != r && e.remove();
+    })
+}
+```
+
+.footnote[.red[*] Production code (likely untested)]
+
+---
+
+# Study Case: *AL's website*
+
+.big[Greeting onLoad (javascript):]
+
+```javascript
+function displayTimeofDayGreeting(date) {
+    var t = date.getHours(),
+        n = date.getMinutes(),
+        r = "";
+
+    (t > 5 || t == 5 && n >= 30) && t < 12 ? r = "morning" : t < 17 ? r = "afternoon" : t < 22 ? r = "evening" : r = "night";
+
+    return r;
+}
+```
+
+.footnote[.red[*] Testable code (decoupled, a.k.a. _"pure"_ function)]
+
+---
+
 class: center, middle, inverse
 
 # Testing legacy projects
@@ -211,4 +260,4 @@ class: center, middle, inverse
 ---
 class: center, middle, inverse
 
-# Ultimately, it's not abut us!
+# Ultimately, it's not about us!
