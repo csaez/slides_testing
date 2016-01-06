@@ -17,12 +17,13 @@ class: center, middle, inverse
 # Agenda
 
 1. Introduction
-2. Testing as Technical Artists
+2. Testing and Technical Artists
 3. Automated testing
 4. Beyond the quality gate
 5. Test-driven development
-6. Testing legacy projects (coverage)
-7. It's not only about us!
+6. Study case
+7. Legacy projects
+8. Conclusions
 
 ---
 class: center, middle, inverse
@@ -212,6 +213,13 @@ Benefits *from a developer point of view*:
 - It's fun!
 
 ---
+class: center, middle, inverse
+
+# Study Case: *AL's website*
+
+![http://www.animallogic.com](images/al_greeting.png)
+
+---
 
 # Study Case: *AL's website*
 
@@ -257,7 +265,63 @@ function displayTimeofDayGreeting(date) {
 
 class: center, middle, inverse
 
-# Testing legacy projects
+# Legacy projects
+
+---
+
+# Test-last development
+
+### Before to begin:
+
+--
+
+- What are the unknown/hidden dependencies/pre-requisites?
+
+--
+
+- Are there any specific environment requirements to mock/simulate?
+
+--
+
+- Can we change code?
+
+--
+
+- Is the code testable in its current status?
+
+--
+
+- *Focus on what is possible* rather than what isn’t!
+
+---
+
+# Test-last development
+
+### Creating your tests:
+
+--
+
+- Where to start? pick a bussy code path (most bang for your buck).
+
+--
+
+- Create fixtures for your tests (setup, teardown).
+
+--
+
+- Focus on coverage instead of corner cases (avoid early refactoring).
+
+--
+
+- Group by pathways.
+
+--
+
+- Don't depend on pre-existing data (prepare test data or mock all the things).
+
+--
+
+- Remove dead/unused code.
 
 ---
 class: center, middle, inverse
