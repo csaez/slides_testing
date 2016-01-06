@@ -217,7 +217,7 @@ class: center, middle, inverse
 
 # Study Case: *AL's website*
 
-![http://www.animallogic.com](images/al_greeting.png)
+[![http://www.animallogic.com](images/al_greeting.png)](http://www.animallogic.com)
 
 ---
 
