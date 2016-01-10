@@ -2,9 +2,11 @@ class: center, middle, inverse
 # Testing as a medium
 
 ---
+class: whoami
+
 # Who am I?
 
-- .big[CESAR SAEZ]
+- Cesar Saez
 - Character TD @ Animal Logic.
 - Free and open source software enthusiast.
 - All things Python.
@@ -31,7 +33,7 @@ class: center, middle, inverse
 # What is this talk about?
 
 ---
-# This is *not* about:
+# This is *not* about
 
 - *Agile* dogmas/methodologies.
 
@@ -48,7 +50,7 @@ class: center, middle, inverse
 - Me lecturing you.
 
 ---
-# This is an *open discussion* on:
+# This is an *open discussion*
 
 - What do we understand by testing.
 
@@ -154,9 +156,8 @@ class: center, middle, inverse
 
 --
 
-> Exploratory testing is simultaneously *learning about the system* while
-> designing and executing tests, *using feedback from the last test to inform
-> the next*.
+> Testing is simultaneously *learning about the system* while designing and
+> executing tests, *using feedback from the last test to inform the next*.
 > .right[Elisabeth Hendrickson]
 
 --
@@ -262,6 +263,30 @@ function displayTimeofDayGreeting(date) {
 .footnote[.red[*] Testable code (decoupled, a.k.a. _"pure"_ function)]
 
 ---
+class: center, middle, clear
+
+## Front-end devs have no idea...
+Are you sure? What about a simple "hello world" program?
+
+---
+
+# Homework: *hello_world.py*
+
+```python
+#!/usr/bin/env python
+
+def main():
+    print("Hello, world!")
+
+if __name__ == "__main__":
+    main()
+```
+
+- Is this a good design?
+- Is it testable?
+- How would you do it?
+
+---
 
 class: center, middle, inverse
 
@@ -327,3 +352,40 @@ class: center, middle, inverse
 class: center, middle, inverse
 
 # Ultimately, it's not about us!
+
+---
+
+# Closing thoughts
+
+- Testing is a tool to meassure the quality of the software/library/system.
+
+--
+
+- Without data/reports on the health and status of the project, it is pretty
+  hard to take any kind of long-term decision.
+
+--
+
+- We are already testing, manual testing.
+
+--
+
+- Automated testing *is not a big deal*, think of it as leaving footprints as
+  you go, so there's no need to repeat yourself by re-doing manual testing.
+
+--
+
+- A reasonable test suite helps/allows refactor and prevent regressions.
+
+--
+
+- Test snippets can be used as a poor's man documentation.
+
+--
+
+- Write testable/quality code is up to you.
+
+---
+class: center, middle, inverse
+
+# Thanks!
