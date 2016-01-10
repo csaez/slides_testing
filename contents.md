@@ -275,11 +275,8 @@ Are you sure? What about a simple "hello world" program?
 ```python
 #!/usr/bin/env python
 
-def main():
-    print("Hello, world!")
-
 if __name__ == "__main__":
-    main()
+    print "Hello, world!"
 ```
 
 - Is this a good design?
@@ -383,7 +380,11 @@ class: center, middle, inverse
 
 --
 
-- Write testable/quality code is up to you.
+- Tests can be used to explore and drive the development (its constraints usually lead to better designs).
+
+--
+
+- No matter what, write testable/quality code is up to you.
 
 ---
 class: center, middle, inverse
