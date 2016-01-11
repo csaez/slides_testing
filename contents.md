@@ -246,17 +246,20 @@ function displayTimeofDayGreeting() {
 
 # Study Case: *AL's website*
 
-.big[Greeting onLoad (javascript):]
-
 ```javascript
-function displayTimeofDayGreeting(date) {
+function getTimeKey(date) {
     var t = date.getHours(),
         n = date.getMinutes(),
         r = "";
-
     (t > 5 || t == 5 && n >= 30) && t < 12 ? r = "morning" : t < 17 ? r = "afternoon" : t < 22 ? r = "evening" : r = "night";
-
     return r;
+}
+function displayTimeofDayGreeting() {
+    var key = getTimeKey(new Date);
+    this.$el.find(".doodle").each(function() {
+      var e = $(this);
+      e.attr("data-timeofday") != key && e.remove();
+    })
 }
 ```
 
