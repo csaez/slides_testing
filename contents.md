@@ -248,22 +248,22 @@ function displayTimeofDayGreeting() {
 
 ```javascript
 function getTimeKey(date) {
-    var t = date.getHours(),
-        n = date.getMinutes(),
-        r = "";
-    (t > 5 || t == 5 && n >= 30) && t < 12 ? r = "morning" : t < 17 ? r = "afternoon" : t < 22 ? r = "evening" : r = "night";
-    return r;
+    var t = date.getHours(), n = date.getMinutes(), key = "";
+    (t > 5 || t == 5 && n >= 30) && t < 12 ? key = "morning" : t < 17 ? key = "afternoon" : t < 22 ? key = "evening" : key = "night";
+    return key;
+}
+function hideElementByKey(elem, key) {
+    var hide = elem.attr("data-timeofday") != key;
+    hide ? elem.remove();
+    return hide;
 }
 function displayTimeofDayGreeting() {
     var key = getTimeKey(new Date);
     this.$el.find(".doodle").each(function() {
-      var e = $(this);
-      e.attr("data-timeofday") != key && e.remove();
+        hideElementByKey($(this), key);
     })
 }
 ```
-
-.footnote[.red[*] Testable code (decoupled, a.k.a. _"pure"_ function)]
 
 ---
 class: center, middle, clear
